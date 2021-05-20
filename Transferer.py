@@ -18,23 +18,9 @@ print(Fore.CYAN + '''
 ''')
 
 while True:
-    bypassed = False
-    while not bypassed:
-        try:
-            amount = int(input('Amount of characters: '))
-        except ValueError:
-            print('> Please input a digit.')
-            sleep(2)
-            system('cls')
-            continue
-        bypassed = True
-
     note = str(input('Note: '))
     email = str(input('Email: '))
-    password = ''.join(choice(
-        ascii_letters + digits + punctuation + '¤£€—§•'
-    ) for _ in range(amount))
-    print('> Generated Password: %s' % password)
+    password = str(input('Password: '))
     with open('Passwords.txt', 'a', encoding='UTF-8') as f:
-        f.write('Note: %s\nEmail: %s\nPassword: %s\n\n' % (note, email, password))
+        f.write('Note: %s\nEmail / Username: %s\nPassword: %s\n\n' % (note, email, password))
     print()
