@@ -6,8 +6,8 @@
 This tool generates a random password and saves it to a txt file.
 
 ## Preview
-![](https://archie.monke.host/sIAmWMu5)
-![](https://archie.otters.host/4Zg2f7S0)
+![](https://cdn.upload.systems/uploads/sIAmWMu5.png)
+![](https://cdn.upload.systems/uploads/4Zg2f7S0.png)
 
 ## Usage
 - Python 3.6 or above is required.
